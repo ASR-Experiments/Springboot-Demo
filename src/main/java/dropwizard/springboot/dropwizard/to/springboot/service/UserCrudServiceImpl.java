@@ -3,6 +3,7 @@ package dropwizard.springboot.dropwizard.to.springboot.service;
 import dropwizard.springboot.dropwizard.to.springboot.dto.UserDto;
 import dropwizard.springboot.dropwizard.to.springboot.entity.UserEntity;
 import dropwizard.springboot.dropwizard.to.springboot.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,7 @@ public class UserCrudServiceImpl implements UserCrudService {
         return user;
     }
 
+    @Transactional
     @Override
     public UserEntity updateUser(Integer userId, UserDto userDto) {
         Optional<UserEntity> optionalUserEntity = userRepository.findById(userId);
