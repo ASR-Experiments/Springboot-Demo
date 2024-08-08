@@ -3,7 +3,6 @@ package dropwizard.springboot.dropwizard.to.springboot.service;
 import dropwizard.springboot.dropwizard.to.springboot.dto.UserDto;
 import dropwizard.springboot.dropwizard.to.springboot.entity.UserEntity;
 import dropwizard.springboot.dropwizard.to.springboot.repository.UserRepository;
-import dropwizard.springboot.dropwizard.to.springboot.service.UserCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
